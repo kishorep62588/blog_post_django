@@ -26,6 +26,10 @@
                   <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
                     <a class="nav-item nav-link" href="{% url 'blog-about' %}"">About</a>
+                    <form action="search">
+                      <input class="control-form" type="text" name="Search">
+                      <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
                   </div>
                   <!-- Navbar Right Side -->
                   <div class="navbar-nav">

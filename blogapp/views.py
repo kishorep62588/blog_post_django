@@ -65,3 +65,15 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
     return render(request, 'blogapp/about.html', {'title':'about'})
+
+def search(request):
+    search_key = get_object_or_404(User, username=request.GET["Search"])
+    objects = Post.objects.filter(author__exact=search_key).order_by('-date')
+
+    context = {
+        "posts":objects,
+        "length":objects.count(),
+        "search_key":search_key
+    }
+
+    return render(request, 'blogapp/search_posts.html', context)
