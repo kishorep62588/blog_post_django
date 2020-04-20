@@ -25,7 +25,7 @@ WIP
 - This will update the project with all the settings present in the html pages and authentication.
 - Run "py manage.py runserver" or "python3 manage.py runserver" depending on your operating system.
 - If all the installation process successful, user can see the below page as welcome page.
-![starting_screen](https://github.com/kishorep62588/blog_post_django/blob/master/screenshots/hoemscreen_without_profiles.JPG)
+![starting_screen](https://github.com/kishorep62588/blog_post_django/blob/master/screenshots/homescreen_without_profiles.JPG)
 - Please note, since there is no data present in the db. you will get blank page with navigation bar like above.
 - User can change the logos by replacing the existing logos and assign then using Django admin panel.
 
