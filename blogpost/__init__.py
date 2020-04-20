@@ -1,0 +1,1 @@
+## This is an Init file for blogpost package
